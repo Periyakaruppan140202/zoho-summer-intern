@@ -1,0 +1,45 @@
+import java.io.IOException;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.container.ContainerRequestFilter;
+import javax.ws.rs.container.ContainerResponseFilter;
+import javax.ws.rs.container.ContainerRequestContext;
+import javax.ws.rs.container.ContainerResponseContext;
+
+/**
+ * Root resource (exposed at "servlet" path)
+ */
+@Path("servlet")
+public class Servlet implements ContainerRequestFilter, ContainerResponseFilter {
+
+    /**
+     * Method handling HTTP GET requests. The returned object will be sent
+     * to the client as "text/plain" media type.
+     *
+     * @return String that will be returned as a text/plain response.
+     */
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getIt() {
+        return "Got it!";
+    }
+
+	@Override
+	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
+			throws IOException {
+		System.out.println("Request Headers:");
+		responseContext.getHeaders().addFirst("Powered By", "Zoho");
+		System.out.println("Headers: " + responseContext.getHeaders());
+		
+	}
+
+	@Override
+	public void filter(ContainerRequestContext requestContext) throws IOException {
+		System.out.println("Response Headers:");
+		System.out.println("Headers: " + requestContext.getHeaders());
+		
+	}
+}
