@@ -23,7 +23,7 @@ public class App
         String a = sc.nextLine();
         String b = sc.nextLine();
         String c = sc.nextLine();
-        obj.setSno(Integer.parseInt(c));
+        obj.setSno(Integer.parseInt(a));
         obj.setName(b);
         obj.setScore(Integer.parseInt(c));
         
