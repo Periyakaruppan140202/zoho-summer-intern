@@ -59,3 +59,9 @@ Triggers
 Transactions
 
 Day 5
+** 14-July-2022
+
+Task 1:
+Java Coding Question
+- Beverage Shop Question
+- Solved based on Recursion and Backtracking
