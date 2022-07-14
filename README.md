@@ -1,5 +1,72 @@
-# zoho-summer-intern
+# **Zoho Summer Intern**
 > This repository contains everyday activity pursued during the one month Zoho Summer Internship.
 
-I have documented the evryday work and tasks and mentioned the resources I refered for completing the tasks.
-You can view them inside the each day's folder
+I have documented the everyday work and tasks!
+
+## **Day 1**
+> *08-July-2022*
+
+**Task 1:** 
+Java Collections and File Handling
+
+**Task 2:** 
+JDBC
+1. DML Operations using JDBC.
+2. Stmt vs Prepared Stmt.
+3. ResultSet Handling
+4. ResultSetMetaData - Usage
+5. ORM
+
+## **Day 2**
+> *11-July-2022*
+
+**Task 1:** 
+Design Patterns in Java
+1. Singleton (Creational)
+2. Observer (Behavioral)
+3. Strategy (Behavioral)
+4. Factory (Creational)
+
+**Task 2:** 
+Jersey Filters
+
+## **Day 3**
+> *12-July-2022*
+
+**Task 1:**
+Basic SQL Commands
+- DDL , DML
+- Basic Operations using various DML.
+- Limiting Results
+- Sorting Results
+- Skipping Results
+- Case statements
+- Aggregation
+- Constraints
+- Index and its uses.
+- Alias
+- GROUP BY and Having Clause
+
+**Task 2:**
+- Joins
+- Subqueries
+- Unions
+
+## **Day 4**
+> *13-July-2022*
+
+**Task 1:**
+SQL Final Assessment - Assignment
+
+**Task 2:**
+- InBuilt Functions in SQL
+- Triggers
+- Transactions
+
+## **Day 5**
+> *14-July-2022*
+
+**Task 1:**
+Java Coding Question
+- Beverage Shop Question
+- Solved based on Recursion and Backtracking

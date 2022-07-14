@@ -54,9 +54,9 @@ Task 1:
 SQL Final Assessment - Assignment
 
 Task 2:
-InBuilt Functions in SQL
-Triggers
-Transactions
+- InBuilt Functions in SQL
+- Triggers
+- Transactions
 
 Day 5
 ** 14-July-2022
