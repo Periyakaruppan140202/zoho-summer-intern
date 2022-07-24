@@ -12,19 +12,20 @@ class FileOp {
         // Read a file
         Scanner sc = new Scanner(new File("helloworld.txt"));
         System.out.println(sc.nextLine());
+        System.out.println("Enter the text to append in the file: ");
+        Scanner sck = new Scanner(System.in);
+        String x = sck.nextLine();
 
         // Append More text to existing file
         BufferedWriter out = new BufferedWriter(new FileWriter("helloworld.txt",
                 true));
-        out.write("Appended Text");
+        out.write("\nAppended Text: ");
+        out.write(x);
         out.close();
-
-        // Delete a file
-        File file = new File("helloworld.txt");
-        if (file.delete()) {
-            System.out.println("File Successfully deleted!");
-        } else {
-            System.out.println("File Not deleted!");
+        sc = new Scanner(new File("helloworld.txt"));
+        while (sc.hasNextLine()) {
+            System.out.println(sc.nextLine());
         }
+
     }
 }
