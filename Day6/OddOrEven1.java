@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OddOrEven {
+public class OddOrEven1 {
 
     static void reverse(String arr[], int i) {
         int len = arr[i].length();
